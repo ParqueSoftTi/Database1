@@ -1,0 +1,120 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="database1-markdown"
+                  title=""
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Paso 1: Creación de una Base de Datos" duration="0">
+        <ol type="1">
+<li>Utilizando PostgreSQL u otro sistema de gestión de bases de datos relacional, crea una nueva base de datos llamada <code>biblioteca</code>.</li>
+</ol>
+<p>Puedes Utilizar paginas como:</p>
+<ul>
+<li><a href="https://www.mycompiler.io/es/new/sql" target="_blank">mycompiler</a></li>
+<li><a href="https://sqliteonline.com/" target="_blank">sqliteonline</a></li>
+</ul>
+<p class="image-container"><img alt="imagen1" src="img\\7f8b17cbfe86248d.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 2: Creación de Tablas" duration="0">
+        <ol type="1">
+<li>Crea las siguientes tablas en la base de datos <code>biblioteca</code>:<ul>
+<li><code>autores</code> con las columnas <code>autor_id</code> (clave primaria) y <code>nombre</code>.</li>
+<li><code>categorias</code> con las columnas <code>categoria_id</code> (clave primaria) y <code>nombre</code>.</li>
+<li><code>libros</code> con las columnas <code>libro_id</code> (clave primaria), <code>titulo</code>, <code>autor_id</code> (clave foránea que referencia <code>autores.autor_id</code>) y <code>categoria_id</code> (clave foránea que referencia <code>categorias.categoria_id</code>).</li>
+<li><code>prestamos</code> con las columnas <code>prestamo_id</code> (clave primaria), <code>libro_id</code> (clave foránea que referencia <code>libros.libro_id</code>) y <code>fecha_prestamo</code>.</li>
+</ul>
+<img alt="imagen1" src="img\\c7098cbcd6d457bf.png"></li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 3: Inserción de Datos" duration="0">
+        <ol type="1">
+<li>Inserta al menos 3 registros en cada una de las tablas <code>autores</code>, <code>categorias</code> y <code>libros</code>.</li>
+<li>Simula préstamos de libros insertando registros en la tabla <code>prestamos</code>.</li>
+</ol>
+<p class="image-container"><img alt="imagen1" src="img\\645f57adbfe5007.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 4: Visualización de Datos" duration="0">
+        <ol type="1">
+<li>Escribe consultas SQL para mostrar: <ul>
+<li>Todos los autores y sus libros correspondientes.</li>
+<li>Todos los libros prestados en la última semana.</li>
+</ul>
+</li>
+</ol>
+<p class="image-container"><img alt="imagen1" src="img\\c325f12d9e133771.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 5: Modificación de Datos" duration="0">
+        <ol type="1">
+<li>Actualiza el nombre de un autor en la tabla <code>autores</code>.</li>
+<li>Actualiza la categoría de un libro en la tabla <code>libros</code>.</li>
+</ol>
+<p class="image-container"><img alt="imagen1" src="img\\33c28981e15fecfb.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 6: Eliminación de Datos" duration="0">
+        <ol type="1">
+<li>Elimina un libro de la tabla <code>libros</code>.</li>
+<li>Elimina un registro de préstamo de la tabla <code>prestamos</code>.</li>
+</ol>
+<p class="image-container"><img alt="imagen1" src="img\\8d33ce8d43380349.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Entrega:" duration="0">
+        <ol type="1">
+<li>Documenta cada paso realizado, incluyendo las consultas SQL utilizadas y los resultados obtenidos.</li>
+<li>Entrega tu documentación junto con el script SQL utilizado para crear las tablas e insertar los datos.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
